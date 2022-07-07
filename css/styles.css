@@ -47,7 +47,8 @@ ul{
 }
 .site-nav{
         display: flex;
-        margin: auto;               
+        margin: auto;
+        align-items: center;
 }
 .site-nav li{
         display: block;
@@ -70,7 +71,7 @@ ul{
 .page-header__logo{
         color: black;        
 }
-.link-text-footer{
+.page-footer__logo{
         color: #FFFFFF;
 }
 .site-nav__item {
@@ -105,7 +106,7 @@ ul{
 }
 
 /*Contact*/
-.page-header__nav__contact{
+.site-nav__contact{
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -117,19 +118,19 @@ ul{
         justify-content: center;
         align-items: center;
         fill: currentColor;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);        
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);       
 }
-.page-header__nav__email{
+.site-nav__email{
         margin-right: 50px;
 }
-.page-header__nav__tel{
+.site-nav__tel{
         margin-right: 0px;
 }
-.page-header__nav__contact>svg{
+.site-nav__contact>svg{
         margin-right: 10px;
 }
-.page-header__nav__contact:hover,  
-.page-header__nav__contact:focus{
+.site-nav__contact:hover,  
+.site-nav__contact:focus{
         color: #2196F3; 
         fill: currentColor;        
 }
@@ -619,11 +620,41 @@ textarea{
         border: 1px solid #2196F3;
         fill: currentColor;
 }
-/*Footer socials*/
-.adress-social{
-        display: flex;
-        align-items: baseline;
+/*Page footer*/
+.page-footer{
+        padding: 60px 0;
+        background: #2F303A; 
+        display:flex;
+        margin: auto;                               
+}
 
+.page-footer__contact{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        display: block;
+        padding-top: 9px;
+        margin: auto;
+        
+}
+.page-footer__contact:hover, 
+.page-footer__contact:focus{
+        color: #2196F3;
+}
+.page-footer__address{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding-top: 20px;
 }
 .footer-social {
         display: flex;
@@ -744,6 +775,9 @@ textarea{
         background-size: contain;
 }
 
+
+
+
 /*portfolio*/
 .btn-portfolio{
         display: flex;
@@ -766,38 +800,7 @@ textarea{
         margin-right: 0px;
 }
 
-/*footer*/
-.footer{
-        padding: 60px 0;
-        background: #2F303A;                         
-}
 
-.email-footer, .tel-footer{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-        display: flex;
-        padding-top: 9px;
-        
-}
-.email-footer:hover, .tel-footer:hover, .email-footer:focus, .tel-footer:focus{
-        color: #2196F3;
-}
-.address{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-        text-decoration: none;
-        padding-top: 20px;
-}
 
 /*portfolio button*/
 .button{
