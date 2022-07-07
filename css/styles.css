@@ -656,7 +656,7 @@ textarea{
         text-decoration: none;
         padding-top: 20px;
 }
-.footer-social {
+.page-footer__social {
         display: flex;
         display: block;
         width: 206px;
