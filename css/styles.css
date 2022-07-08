@@ -134,15 +134,9 @@ ul{
         color: #2196F3; 
         fill: currentColor;        
 }
-/*.icon-envelope{
-        margin-right: 10px;
-        text-align: center;
-        justify-content: center;
-        color: #757575;
-        
-}*/
 
-/*main section*/
+
+/*Hero*/
 .section{
         padding-top: 94px;
         padding-bottom: 94px;
@@ -410,8 +404,8 @@ textarea{
         fill: currentColor;
 
 }      
-/*Peculiarities secyion*/
-.subtitle{
+/*Advantage section*/
+.advantage__title{
         
         font-weight: 700;
         font-size: 14px;
@@ -420,17 +414,17 @@ textarea{
         text-transform: uppercase;
         color: var(--main-secon-color);
 }
-.subtitle-item{
+.advantage{
         display: flex;
         justify-content: center;        
         background: #FFFFFF;
         gap: 30px;  
         padding-left: 0;           
 }
-.item{
+.advantage__item{
         width: 270px;
 }
-.icon-item{
+.advantage__icon{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -441,13 +435,8 @@ textarea{
 
         background-color: #F5F4FA;
         border-radius: 4px;
-
 }
-
-.subtitle-contanier li{
-        justify-content: flex-start;
-}
-.text{
+.advantage__text{
         font-weight: 400;
         font-size: 14px;
         line-height: 1.8;
@@ -456,11 +445,11 @@ textarea{
         margin-top: 10px;
         margin-bottom: 0px;
 }
-/*what we are doing*/
-.perform-section{
+/*Example section*/
+.achievement-section{
         padding-bottom: 94px;
 }
-.perform, .our-team {
+.section-title, .our-team {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.2;
@@ -469,14 +458,14 @@ textarea{
         margin: auto;
         text-align: center;
 }
-.perform-item{
+.achievement-list{
         display: flex;
         padding: 0px;
         margin-top: 50px;
         margin-bottom: 0px;
         gap: 30px;    
 }
-.perfm-item-text{
+.achievement-list__item{
         position: relative;
 }
 .item-text{
@@ -621,14 +610,12 @@ textarea{
         fill: currentColor;
 }
 /*Page footer*/
-.page-footer{
+.page-footer {
         padding: 60px 0;
-        background: #2F303A; 
-        display:flex;
-        margin: auto;                               
+        background: #2F303A;
 }
 
-.page-footer__contact{
+.footer-list__contact{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -637,16 +624,21 @@ textarea{
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
-        display: block;
+        display: flex;
         padding-top: 9px;
-        margin: auto;
-        
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.page-footer__contact:hover, 
-.page-footer__contact:focus{
+
+.footer-list__contact:hover,
+.footer-list__contact:focus{
         color: #2196F3;
 }
-.page-footer__address{
+.footer-nav {
+        display: flex;
+        align-items: baseline;
+}
+.footer-list__address {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -656,7 +648,9 @@ textarea{
         text-decoration: none;
         padding-top: 20px;
 }
-.page-footer__social {
+
+
+.footer-connect {
         display: flex;
         display: block;
         width: 206px;
@@ -665,7 +659,7 @@ textarea{
         padding: 0;
         
 }
-.joint{
+.footer-connect__title{
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
@@ -674,16 +668,16 @@ textarea{
         
         color: #FFFFFF;
 }
-.links{
+.footer-connect__list{
         display: flex;
         padding-top: 20px;
         gap: 10px;
         color: #FFFFFF;
 }
-.social-icons {
+.footer-connect__icon {
         fill: currentColor;
 }
-.social-links {
+.footer-connect__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -696,8 +690,8 @@ textarea{
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.social-links:hover,
-.social-links:focus {
+.footer-connect__link:hover,
+.footer-connect__link:focus {
         background-color: #2196F3;
         color: #FFFFFF;
         fill: currentColor;
