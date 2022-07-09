@@ -216,7 +216,10 @@ ul{
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
 }
-.modal-text{
+.form{
+        padding:40px;
+}
+.form__text{
 
         font-weight: 700;
         font-size: 20px;
@@ -228,22 +231,7 @@ ul{
         
         color: #212121;
 }
-textarea{
-        resize: none;
-}
-.form{
-        
-        padding:40px;
-}
-.form-field{
-        display: block;
-        position: relative;
-        margin-bottom: 10px;
-        margin-top: 4px;
-        
-        
-}
-.form-label{
+.form__label{
         
         display: flex;
         font-weight: 400;
@@ -254,7 +242,29 @@ textarea{
         color: #757575;
         align-items: flex-start;
 }
-.icon-person{
+.form__field{
+        display: block;
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 4px;       
+}
+textarea{
+        resize: none;
+}
+.form__input{
+        
+        width: 100%;
+            
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:42px ;
+             
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+}
+.form__icon{
         position: absolute;
         width: 18px;
         height: 18px;
@@ -265,33 +275,16 @@ textarea{
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         fill:currentColor;
 }
-.form-input:focus{
+.form__input:focus{
         outline: none;
         border-color: #2196F3;        
 }
-.form-input:focus ~ .icon-person{
+.form__input:focus ~ .form__icon{
         color: #2196F3;
         fill:currentColor;
 }
-.form-input{
-        
-        width: 100%;
-        
-        
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left:42px ;
-        
 
-        
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        fill: currentColor;
-
-
-}
-.form-comment{
+.form__comment{
         width: 448px;
         height: 120px;
         outline: none;
@@ -300,29 +293,28 @@ textarea{
         border-radius: 4px; 
         margin-top: 4px;     
 }
-.form-field-coment{
-        margin-bottom: 0;
+.checkbox{
+        display: inline-flex;
+ 
+        height: 24px;
+        margin-top: 20px;
+           
+        align-items: center;
 }
-.form-input-checkbox{
+.checkbox__label{
+        font-size: 14px;
+        line-height: 24px;               
+        letter-spacing: 0.03em;
+        
+        color: #757575;
+}
+.checkbox__input{
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        position: absolute;
-        
-        
+        position: absolute;       
 }
-.form-field-checkbox{
-        display: inline-flex;
-
-        
-        height: 24px;
-        margin-top: 20px;
-        
-         
-        align-items: center;
-   
-}
-.icon-checkbox{
+.checkbox__icon{
         display:inline-flex;
         position: relative;
         width: 16px;
@@ -335,14 +327,7 @@ textarea{
         border-radius: 2px;
         transform: translateY(15%);               
 }
-.form-label-checkbox{
-        font-size: 14px;
-        line-height: 24px;               
-        letter-spacing: 0.03em;
-        
-        color: #757575;
-}
-.form-input-checkbox:checked + .icon-checkbox{
+.checkbox__input:checked + .checkbox__icon{
         border-color: #2196F3;
         background-color: #2196F3;
         background-image:url('../img/images/vektor.svg');
@@ -350,11 +335,11 @@ textarea{
         background-origin: border-box;  
         background-position: center;      
 }
-.terms{
+.checkbox__text{
         text-decoration:underline;
         color:#2196F3 ;
 }
-.font-field input::placeholder{
+.form__comment::placeholder{
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
@@ -449,7 +434,7 @@ textarea{
 .achievement-section{
         padding-bottom: 94px;
 }
-.section-title, .our-team {
+.section-title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.2;
@@ -458,17 +443,17 @@ textarea{
         margin: auto;
         text-align: center;
 }
-.achievement-list{
+.achievement{
         display: flex;
         padding: 0px;
         margin-top: 50px;
         margin-bottom: 0px;
         gap: 30px;    
 }
-.achievement-list__item{
+.achievement-list{
         position: relative;
 }
-.item-text{
+.achievement-list__item{
         position: absolute;
                  
         color: #FFFFFF;
@@ -486,7 +471,7 @@ textarea{
         
 
 }
-.text-perform{
+.achievement-list__text{
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
@@ -497,13 +482,9 @@ textarea{
         color: #FFFFFF;
 
 }
-/*our team*/
+/*Our team*/
 .team{
         background: #F5F4FA;
-}
-.our-team{       
-        text-align: center;
-
 }
 .teamlead{
         display: flex;
@@ -514,14 +495,19 @@ textarea{
 
         gap: 30px;
 }
-.foto{
+.teamlead__foto{
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;       
 }
-.name{
+.teamlead__item{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+}
+.teamlead__name{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.2;
@@ -530,7 +516,7 @@ textarea{
         text-align: center;
         margin-bottom: 10px;
 }
-.job{
+.teamlead__job{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
@@ -540,11 +526,7 @@ textarea{
         margin-bottom: 16px;
 
 }
-.name-job{
-        padding-top: 30px;
-        padding-bottom: 30px;
 
-}
 .teamled-social{
         display: flex;
         justify-content: center;
@@ -554,10 +536,10 @@ textarea{
         gap: 10px;
         margin-left: 32px;
 }
-.social-icon{
+.teamled-social__icon{
         fill: currentColor;
 }
-.social-link{
+.teamled-social__link{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -569,19 +551,15 @@ textarea{
             
 }
 
-.social-link:hover,
-.social-link:focus {
+.teamled-social__link:hover,
+.teamled-social__link:focus {
         background-color: #2196F3;
         color:#FFFFFF;
         fill: currentColor;
 
 }
-/*client section*/
-.logo-client{
-        display: flex;
-        gap: 30px;
-}
-.client{
+/*Clients section*/
+.clients-title{
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
@@ -589,7 +567,12 @@ textarea{
         color: #212121;
         margin-bottom: 50px;
 }
-.icon-client{
+.clients{
+        display: flex;
+        gap: 30px;
+}
+
+.clients__item{
         display: block;
         width: 170px;
         height: 92px;
@@ -599,12 +582,12 @@ textarea{
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
-.client1, .client2, .client3, .client4, .client5, .client6{
+.clients__icon{
         margin: 16px 32px;
         fill: currentColor;
 }
-.icon-client:hover,
-.icon-client:focus{
+.clients__item:hover,
+.clients__item:focus{
         color: #2196F3;
         border: 1px solid #2196F3;
         fill: currentColor;
@@ -648,7 +631,6 @@ textarea{
         text-decoration: none;
         padding-top: 20px;
 }
-
 
 .footer-connect {
         display: flex;
@@ -808,6 +790,9 @@ textarea{
         color: #212121;
         cursor: pointer;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        
 }
 
 .button:hover, .button:focus, .button-order:hover, .button-order:focus{
