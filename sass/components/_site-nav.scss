@@ -18,11 +18,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    color: #212121;
+    color: $main-secon-color;
     letter-spacing: 0.02em;
     text-decoration: none;
     position: relative;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $cubic;
 }
 
 .site-nav__item__current {
@@ -31,7 +31,7 @@
 
 .site-nav__item:hover,
 .site-nav__item:focus {
-    color: #2196F3;
+    color: $color-for-hover;
 }
 .site-nav__underline::after {
     content: '';
@@ -50,14 +50,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    color: #757575;
+    color: $main-color;
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     fill: currentColor;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $cubic;
 }
 
 .site-nav__email {
@@ -74,6 +74,6 @@
 
 .site-nav__contact:hover,
 .site-nav__contact:focus {
-    color: #2196F3;
+    color: $color-for-hover;
     fill: currentColor;
 }

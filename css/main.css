@@ -278,6 +278,7 @@ ul {
   fill: currentColor;
 }
 
+/*Form*/
 .form {
   padding: 40px;
 }
@@ -516,7 +517,7 @@ textarea {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-secon-color);
+  color: #212121;
 }
 
 .advantage__text {
@@ -524,7 +525,7 @@ textarea {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: #757575;
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -539,7 +540,7 @@ textarea {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--main-secon-color);
+  color: #212121;
   margin: auto;
   text-align: center;
 }
@@ -619,7 +620,7 @@ textarea {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--main-secon-color);
+  color: #212121;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -629,7 +630,7 @@ textarea {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: #757575;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -712,6 +713,7 @@ textarea {
   fill: currentColor;
 }
 
+/*Footer-list*/
 .footer-list__contact {
   font-family: "Roboto";
   font-style: normal;
@@ -1047,7 +1049,7 @@ textarea {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-secon-color);
+  color: #212121;
 }
 
 .portfolio-text__meaning {
@@ -1055,7 +1057,7 @@ textarea {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: #757575;
 }
 
 /*Page footer*/

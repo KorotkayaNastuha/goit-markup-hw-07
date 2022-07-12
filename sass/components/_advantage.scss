@@ -2,7 +2,7 @@
 .advantage {
     display: flex;
     justify-content: center;
-    background: #FFFFFF;
+    background: $bgr-color;
     gap: 30px;
     padding-left: 0;
 }
@@ -28,14 +28,14 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-secon-color);
+    color: $main-secon-color;
 }
 .advantage__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: $main-color;
     margin-top: 10px;
     margin-bottom: 0px;
 }

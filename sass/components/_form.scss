@@ -1,3 +1,4 @@
+/*Form*/
 .form {
     padding: 40px;
 }
@@ -12,7 +13,7 @@
     padding-bottom: 12px;
 
 
-    color: #212121;
+    color: $main-secon-color;
 }
 
 .form__label {
@@ -23,7 +24,7 @@
     line-height: 14px;
     letter-spacing: 0.01em;
     margin-top: 4px;
-    color: #757575;
+    color: $main-color;
     align-items: flex-start;
 }
 
@@ -48,12 +49,12 @@ textarea {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $cubic;
     fill: currentColor;
     
         &:focus {
     outline: none;
-    border-color: #2196F3;
+    border-color: $color-for-hover;
 }
 }
 
@@ -63,9 +64,9 @@ textarea {
     height: 18px;
     top: 50%;
     left: 15px;
-    color: #212121;
+    color: $main-secon-color;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill $cubic;
     fill: currentColor;
 }
 
@@ -100,7 +101,7 @@ textarea {
     line-height: 24px;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: $main-color;
 }
 
 .checkbox__input {
@@ -161,7 +162,7 @@ textarea {
     line-height: 30px;
 
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $color-text;
     cursor: pointer;
     border: none;
 }

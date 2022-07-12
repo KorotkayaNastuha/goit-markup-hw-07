@@ -14,7 +14,7 @@
 }
 
 .teamlead__foto {
-    background: #FFFFFF;
+    background: $bgr-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--main-secon-color);
+    color: $main-secon-color;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -42,7 +42,7 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     margin-bottom: 16px;
 
@@ -70,11 +70,11 @@
     height: 44px;
     border-radius: 50%;
     color: #AFB1B8;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $cubic;
 
          &:hover,
         &:focus {
-            background-color: #2196F3;
+            background-color: $color-for-hover;
             color: #FFFFFF;
             fill: currentColor;
 
