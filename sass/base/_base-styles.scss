@@ -18,8 +18,8 @@ ul {
 
 .body {
     font-family: Roboto, sans-serif;
-    color: var(--main-color)#757575;
-    background-color: var(--bgr-color)#FFFFFF;
+    color: $main-color;
+    background-color: $bgr-color;
     text-decoration: none;
 }
 
